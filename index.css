@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: row;
+}
+
+div, a{
+    font-size: 50px;
+    height: 100vh;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .8s;
+}
+
+a{
+    text-decoration: none;    
+    color: #adabab;
+}
+
+.man:hover{
+    background-color: rgba(9, 117, 190, .3);
+    font-size: 55px;
+}
+
+.woman:hover{
+    background-color: rgba(210, 20, 228, 0.3);
+    font-size: 55px;
+}

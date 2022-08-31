@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    background-image: linear-gradient(to bottom right, rgba(9, 117, 190, .3), rgba(0, 0, 0, .3));
+    width: 100%;
+    height: 100vh;
+}
+
+section {    
+    border-radius: 10px;
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+    color: #eee;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 50px;
+    width: 50%;
+    border-right: 1px solid #eee;
+    height: 98%;
+}
+
+label {
+    color: #eee;
+    font-size: 20px;
+}
+
+strong {
+    font-size: 22px;
+}
+
+a{
+    text-decoration: none;
+    color: #eee;
+    margin-top: 50px;
+    font-size: 30px;
+    transition: all .4s;
+}
+
+a:hover{
+    font-size: 32px;
+}
+
+.peso,
+.altura {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    border-radius: 1px;
+    color: #eee;
+    outline: 0;
+    box-shadow: 0;
+    padding: 5px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.peso::placeholder,
+.altura::placeholder {
+    color: #ccc;
+    font-size: 15px;
+}
+
+.peso:active,
+.altura:active {
+    background: none;
+    color: #eee;
+}
+
+.container-calc {
+    display: flex;
+}
+
+.button-calc {
+    border: none;
+    background: none;
+    color: #eee;
+    font-size: 30px;
+    padding: 8px;
+    margin-top: 20px;
+    transition: all .2s;
+}
+
+.button-calc:hover {
+    opacity: .8;
+    font-size: 32px;
+}
+
+.button-calc:active {
+    opacity: .8;
+    color: #444;
+}
+
+.result {
+    margin: 10px;
+    width: 45%;
+    color: #eee;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .8s;
+}
+
+.result img {
+    width: 150px;
+    height: 200px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+
+    form {
+        padding: 35px 40px;
+    }
+
+    strong {
+        font-size: 22px;
+    }
+    
+    label {
+        font-size: 15px;
+    }
+
+    .result img {
+        width: 120px;
+        height: 170px;
+        margin-top: 10px;
+        padding: 3px;
+    }
+
+    .result {
+        margin: 5px;
+        font-size: 15px;
+    }
+
+    .peso,
+    .altura {
+        padding: 2px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .button-calc {
+        font-size: 15px;
+        padding: 2px;
+        margin-top: 20px;
+    }
+
+    .button-calc:hover {
+        opacity: .8;
+        font-size: 17px;
+    }
+
+    .peso::placeholder,
+    .altura::placeholder {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 660px) {
+
+    form {
+        padding: 35px 25px;
+    }
+
+    strong {
+        font-size: 17px;
+    }
+    
+    label {
+        font-size: 12px;
+    }
+
+    .result img {
+        width: 100px;
+        height: 150px;
+        margin-top: 10px;
+        padding: 3px;
+    }
+
+    .result {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .peso,
+    .altura {
+        padding: 2px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .button-calc {
+        font-size: 13px;
+        padding: 2px;
+        margin-top: 20px;
+    }
+
+    .button-calc:hover {
+        opacity: .8;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    form {
+        padding: 35px 5px;
+    }
+
+    strong {
+        font-size: 10px;
+    }
+    
+    label {
+        font-size: 12px;
+    }
+
+    section{
+        height: 300px;
+    }
+
+    .result img {
+        width: 80px;
+        height: 130px;
+        margin-top: 10px;
+    }
+
+    .result {
+        margin: 2px;
+        font-size: 10px;
+    }
+
+    .peso,
+    .altura {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .button-calc {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .button-calc:hover {
+        opacity: .8;
+        font-size: 14px;
+    }
+
+}

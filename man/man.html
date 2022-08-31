@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importar Fonte ROBOTO do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <!-- Importar Arquivo CSS -->
+    <link rel="stylesheet" href="man.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <section>
+        <h1>Calculadora IMC</h1>
+        <div class="container-calc">
+            <form onsubmit="calcImc(event)">
+                <label for="peso">Peso</label>
+                <input type="text" id="peso" class="peso" placeholder="Digite seu peso" autocomplete="off" />
+                <label for="altura">Altura</label>
+                <input type="text" name="altura" id="altura" class="altura" placeholder="Digita sua Altura" autocomplete="off" />
+                <input type="submit" class="button-calc" value="Calcular">
+            </form>
+            <div id="result" class="result">
+            </div>
+        </div>
+    </section>
+
+    <a href="../index.html">Voltar</a>
+
+    <script src="man.js"></script>
+</body>
+</html>
